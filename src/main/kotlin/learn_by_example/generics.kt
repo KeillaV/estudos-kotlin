@@ -1,9 +1,4 @@
-// instanciando uma classe sem atributos:
-class Customer
-
-// instanciando classe com construtor com parâmetros:
-class Contact(val id: Int, var email: String)
-
+package learn_by_example
 
 // implementação de generics:
 // Classe para representação de pilha genérica para elementos E
@@ -28,20 +23,7 @@ class GenericStack<E>(vararg items: E) {
 // Função genérica
 fun <E> genericStackOf(vararg elements: E) = GenericStack(*elements)
 
-
 fun main() {
-    // não é necessário utilizar new
-    val customer = Customer() // construtor padrão gerado pelo kotlin
-
-    val contact = Contact(1, "maryjane@gmail.com")
-    println(contact.id)
-
-    // Atualizando variável mutável
-    println(contact.email)
-    contact.email = "jane@gmail.com"
-    println(contact.email)
-
-
     val stack: GenericStack<Int> = genericStackOf(1, 2, 3, 4, 5)
     println(stack)
     stack.push(6)

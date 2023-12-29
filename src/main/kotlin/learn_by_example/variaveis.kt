@@ -1,3 +1,5 @@
+package learn_by_example
+
 fun main() {
     // var é uma variável mutável, pode ter seu valor reatribuído:
     var a: String = "Hello world!"; // Tipo definido
