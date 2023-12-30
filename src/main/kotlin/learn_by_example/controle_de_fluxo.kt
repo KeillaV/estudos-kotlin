@@ -28,6 +28,11 @@ fun whenAssign(obj: Any): Any {
     return result
 }
 
+// Inline function para retornar maior valor:
+// If sendo usado como expression (equivalente ao ternário)
+fun max(a: Int, b: Int) = if (a > b) a else b
+
+
 fun main() {
     cases("Hello")
     cases(1)
