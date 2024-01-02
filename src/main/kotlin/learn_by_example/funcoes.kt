@@ -24,12 +24,12 @@ fun printMessageWithPrefix(message: String, prefix: String = "INFO") {
 //  }
 
 // Exemplo de função com retorno:
-fun sum(x: Int, y: Int): Int {
-  return x + y
-}
+//fun sum(x: Int, y: Int): Int {
+//  return x + y
+//}
 
 // Inline function:
-fun multiply(x: Int, y: Int) = x * y
+//fun multiply(x: Int, y: Int) = x * y
 
 // vararg: parâmetro que recebe uma quantidade indefinida de um determinado tipo (como uma lista)
 fun printAllValues(vararg messages: String) {
